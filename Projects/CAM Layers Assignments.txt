@@ -1,9 +1,9 @@
 Mill layer		.GML	46-Milling
 Drill File		.TXT	44-Drills; 45-Holes
-Bottom Soldermask	.GBS	30-bStop
+Bottom Soldermask		.GBS	30-bStop
 Top Soldermask		.GTS	29-tStop
-Bottom Silkscreen	.GBO	22-bPlace; 26-bNames
-Top Paste		.GTP	31-tCream
+Bottom Silkscreen		.GBO	22-bPlace; 26-bNames
+Top Paste			.GTP	31-tCream
 Top Silkscreen		.GTO	21-tPlace; 25-tNames
 Bottom Copper		.GBL	16-Bottom; 17-Pads; 18-Vias
 Top Copper		.GTL	1-Top; 17-Pads; 18-Vias; 20-Dimension
