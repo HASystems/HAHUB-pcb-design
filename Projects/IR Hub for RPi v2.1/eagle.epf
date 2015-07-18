@@ -660,7 +660,7 @@ Layer=1
 
 [Win_3]
 Type="Control Panel"
-Loc="-8 -30 591 369"
+Loc="-8 -30 803 433"
 State=2
 Number=0
 
