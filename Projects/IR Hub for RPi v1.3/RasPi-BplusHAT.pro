@@ -1,9 +1,9 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Users/RenuAtul/Documents/hahub/Eagle/Projects/IR Hub for RPi v1.3 - try repositioning IRRCV/RasPi-BplusHAT.brd
+Job           : C:/Users/RenuAtul/Documents/hahub/Eagle/Projects/IR Hub for RPi v1.3/RasPi-BplusHAT.brd
 
-Start at      : 20:36:59 (7/23/2015)
-End at        : 20:39:28 (7/23/2015)
+Start at      : 21:01:05 (7/23/2015)
+End at        : 21:03:33 (7/23/2015)
 Elapsed time  : 
 
 Signals       :    57   RoutingGrid: 6 mil  Layers: 2
