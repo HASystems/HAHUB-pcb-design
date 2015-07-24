@@ -9974,10 +9974,10 @@ Source: www.kingbright.com</description>
 <attribute name="OC_NEWARK" value="52K9809"/>
 </part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="LED6-IND2" library="led" deviceset="LED" device="CHIPLED_0805" value="Yellow">
+<part name="LED6-IND2" library="led" deviceset="LED" device="CHIPLED_0805" value="Green">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value="150080YS75000"/>
-<attribute name="OC_NEWARK" value="95W3804"/>
+<attribute name="MPN" value="150080GS75000"/>
+<attribute name="OC_NEWARK" value="95W3800"/>
 </part>
 <part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="100Ohm">
 <attribute name="MF" value="VISHAY/DALE"/>
@@ -9996,10 +9996,10 @@ Source: www.kingbright.com</description>
 <attribute name="OC_NEWARK" value="52K9809"/>
 </part>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="LED7-WIFI" library="led" deviceset="LED" device="CHIPLED_0805" value="Green">
+<part name="LED7-WIFI" library="led" deviceset="LED" device="CHIPLED_0805" value="Blue">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value="150080GS75000"/>
-<attribute name="OC_NEWARK" value="95W3800"/>
+<attribute name="MPN" value="150080BS75000"/>
+<attribute name="OC_NEWARK" value="95W3799"/>
 </part>
 <part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="100Ohm">
 <attribute name="MF" value="VISHAY/DALE"/>
@@ -10072,8 +10072,8 @@ Source: www.kingbright.com</description>
 </part>
 <part name="R14" library="adafruit" deviceset="R-US_" device="R0805" value="1M">
 <attribute name="MF" value="VISHAY/DALE"/>
-<attribute name="MPN" value="CRCW080510K0FKEA"/>
-<attribute name="OC_NEWARK" value="52K9795"/>
+<attribute name="MPN" value="CRCW08051M00FKEA"/>
+<attribute name="OC_NEWARK" value="52K9759"/>
 </part>
 <part name="C3" library="adafruit" deviceset="C-US" device="C0805" value="1uF">
 <attribute name="MF" value=""/>
@@ -10094,11 +10094,19 @@ Source: www.kingbright.com</description>
 </part>
 <part name="R15" library="adafruit" deviceset="R-US_" device="R0805" value="100K">
 <attribute name="MF" value="VISHAY/DALE"/>
-<attribute name="MPN" value="CRCW080510K0FKEA"/>
-<attribute name="OC_NEWARK" value="52K9795"/>
+<attribute name="MPN" value="CRCW0805100KFKEA"/>
+<attribute name="OC_NEWARK" value="52K9808"/>
 </part>
-<part name="U$1" library="varshneya" deviceset="74HC2G17-Q100" device=""/>
-<part name="U$2" library="varshneya" deviceset="74HC2G17-Q100" device=""/>
+<part name="U$1" library="varshneya" deviceset="74HC2G17-Q100" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="74HC2G17GW,125"/>
+<attribute name="OC_NEWARK" value="71R2196"/>
+</part>
+<part name="U$2" library="varshneya" deviceset="74HC2G17-Q100" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="74HC2G17GW,125"/>
+<attribute name="OC_NEWARK" value="71R2196"/>
+</part>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -10413,13 +10421,20 @@ push buttons</text>
 <instance part="U$1" gate="G$1" x="284.48" y="198.12" smashed="yes">
 <attribute name="NAME" x="279.4" y="201.295" size="1.778" layer="95"/>
 <attribute name="VALUE" x="279.4" y="193.04" size="1.778" layer="96"/>
+<attribute name="OC_NEWARK" x="284.48" y="198.12" size="1.4224" layer="96" display="off"/>
+<attribute name="MF" x="284.48" y="198.12" size="1.4224" layer="96" display="off"/>
+<attribute name="MPN" x="284.48" y="198.12" size="1.4224" layer="96" display="off"/>
 </instance>
 <instance part="U$1" gate="G$2" x="345.44" y="198.12" smashed="yes">
 <attribute name="NAME" x="340.36" y="201.295" size="1.778" layer="95"/>
 <attribute name="VALUE" x="340.36" y="193.04" size="1.778" layer="96"/>
 </instance>
 <instance part="U$1" gate="G$3" x="243.84" y="195.58"/>
-<instance part="U$2" gate="G$1" x="347.98" y="132.08"/>
+<instance part="U$2" gate="G$1" x="347.98" y="132.08">
+<attribute name="OC_NEWARK" x="347.98" y="132.08" size="1.4224" layer="96" display="off"/>
+<attribute name="MF" x="347.98" y="132.08" size="1.4224" layer="96" display="off"/>
+<attribute name="MPN" x="347.98" y="132.08" size="1.4224" layer="96" display="off"/>
+</instance>
 <instance part="U$2" gate="G$2" x="292.1" y="127"/>
 <instance part="U$2" gate="G$3" x="327.66" y="129.54"/>
 <instance part="+3V4" gate="G$1" x="243.84" y="213.36" smashed="yes">
