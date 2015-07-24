@@ -10097,12 +10097,12 @@ Source: www.kingbright.com</description>
 <attribute name="MPN" value="CRCW0805100KFKEA"/>
 <attribute name="OC_NEWARK" value="52K9808"/>
 </part>
-<part name="U$1" library="varshneya" deviceset="74HC2G17-Q100" device="">
+<part name="SCHMT1" library="varshneya" deviceset="74HC2G17-Q100" device="">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="74HC2G17GW,125"/>
 <attribute name="OC_NEWARK" value="71R2196"/>
 </part>
-<part name="U$2" library="varshneya" deviceset="74HC2G17-Q100" device="">
+<part name="SCHMT2" library="varshneya" deviceset="74HC2G17-Q100" device="">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="74HC2G17GW,125"/>
 <attribute name="OC_NEWARK" value="71R2196"/>
@@ -10111,6 +10111,7 @@ Source: www.kingbright.com</description>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10418,25 +10419,25 @@ push buttons</text>
 <attribute name="NAME" x="278.13" y="125.5014" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="275.59" y="130.302" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$1" gate="G$1" x="284.48" y="198.12" smashed="yes">
+<instance part="SCHMT1" gate="G$1" x="284.48" y="198.12" smashed="yes">
 <attribute name="NAME" x="279.4" y="201.295" size="1.778" layer="95"/>
 <attribute name="VALUE" x="279.4" y="193.04" size="1.778" layer="96"/>
 <attribute name="OC_NEWARK" x="284.48" y="198.12" size="1.4224" layer="96" display="off"/>
 <attribute name="MF" x="284.48" y="198.12" size="1.4224" layer="96" display="off"/>
 <attribute name="MPN" x="284.48" y="198.12" size="1.4224" layer="96" display="off"/>
 </instance>
-<instance part="U$1" gate="G$2" x="345.44" y="198.12" smashed="yes">
+<instance part="SCHMT1" gate="G$2" x="345.44" y="198.12" smashed="yes">
 <attribute name="NAME" x="340.36" y="201.295" size="1.778" layer="95"/>
 <attribute name="VALUE" x="340.36" y="193.04" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$3" x="243.84" y="195.58"/>
-<instance part="U$2" gate="G$1" x="347.98" y="132.08">
+<instance part="SCHMT1" gate="G$3" x="243.84" y="195.58"/>
+<instance part="SCHMT2" gate="G$1" x="347.98" y="132.08">
 <attribute name="OC_NEWARK" x="347.98" y="132.08" size="1.4224" layer="96" display="off"/>
 <attribute name="MF" x="347.98" y="132.08" size="1.4224" layer="96" display="off"/>
 <attribute name="MPN" x="347.98" y="132.08" size="1.4224" layer="96" display="off"/>
 </instance>
-<instance part="U$2" gate="G$2" x="292.1" y="127"/>
-<instance part="U$2" gate="G$3" x="327.66" y="129.54"/>
+<instance part="SCHMT2" gate="G$2" x="292.1" y="127"/>
+<instance part="SCHMT2" gate="G$3" x="327.66" y="129.54"/>
 <instance part="+3V4" gate="G$1" x="243.84" y="213.36" smashed="yes">
 <attribute name="VALUE" x="246.38" y="215.9" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -10445,6 +10446,7 @@ push buttons</text>
 <instance part="+3V5" gate="G$1" x="327.66" y="144.78" smashed="yes">
 <attribute name="VALUE" x="330.2" y="147.32" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="GND16" gate="1" x="340.36" y="127"/>
 </instances>
 <busses>
 </busses>
@@ -10571,13 +10573,18 @@ push buttons</text>
 <junction x="274.32" y="187.96"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$3" pin="GND"/>
+<pinref part="SCHMT1" gate="G$3" pin="GND"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="243.84" y1="180.34" x2="243.84" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$3" pin="GND"/>
+<pinref part="SCHMT2" gate="G$3" pin="GND"/>
 <pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SCHMT2" gate="G$1" pin="I"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="340.36" y1="129.54" x2="340.36" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -10612,12 +10619,12 @@ push buttons</text>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$3" pin="VCC"/>
+<pinref part="SCHMT1" gate="G$3" pin="VCC"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <wire x1="243.84" y1="210.82" x2="243.84" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$3" pin="VCC"/>
+<pinref part="SCHMT2" gate="G$3" pin="VCC"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
@@ -10688,7 +10695,7 @@ push buttons</text>
 <segment>
 <wire x1="292.1" y1="198.12" x2="294.64" y2="198.12" width="0.1524" layer="91"/>
 <label x="294.64" y="198.12" size="1.4224" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="O"/>
+<pinref part="SCHMT1" gate="G$1" pin="O"/>
 </segment>
 </net>
 <net name="GPIO27" class="0">
@@ -10700,7 +10707,7 @@ push buttons</text>
 <segment>
 <wire x1="353.06" y1="198.12" x2="355.6" y2="198.12" width="0.1524" layer="91"/>
 <label x="355.6" y="198.12" size="1.4224" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$2" pin="O"/>
+<pinref part="SCHMT1" gate="G$2" pin="O"/>
 </segment>
 </net>
 <net name="GPIO22" class="0">
@@ -11009,7 +11016,7 @@ push buttons</text>
 <pinref part="RUN" gate="A" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$2" pin="O"/>
+<pinref part="SCHMT2" gate="G$2" pin="O"/>
 <wire x1="299.72" y1="127" x2="302.26" y2="127" width="0.1524" layer="91"/>
 <label x="302.26" y="127" size="1.4224" layer="95" xref="yes"/>
 </segment>
@@ -11036,7 +11043,7 @@ push buttons</text>
 <wire x1="274.32" y1="198.12" x2="274.32" y2="203.2" width="0.1524" layer="91"/>
 <junction x="274.32" y="198.12"/>
 <wire x1="276.86" y1="198.12" x2="274.32" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="I"/>
+<pinref part="SCHMT1" gate="G$1" pin="I"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -11051,13 +11058,13 @@ push buttons</text>
 <wire x1="335.28" y1="198.12" x2="335.28" y2="203.2" width="0.1524" layer="91"/>
 <junction x="335.28" y="198.12"/>
 <wire x1="337.82" y1="198.12" x2="335.28" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$2" pin="I"/>
+<pinref part="SCHMT1" gate="G$2" pin="I"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$2" pin="I"/>
+<pinref part="SCHMT2" gate="G$2" pin="I"/>
 <wire x1="279.4" y1="127" x2="281.94" y2="127" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="281.94" y1="127" x2="284.48" y2="127" width="0.1524" layer="91"/>
