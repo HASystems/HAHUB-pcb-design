@@ -858,17 +858,17 @@ design rules under a new name.</description>
 <attribute name="MPN" value="MMBT4401-TP" x="22" y="27" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="20.595" y="28.095" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="LED2-IR" library="led" package="MICRO-SIDELED" value="IR" x="8" y="34.5" smashed="yes" rot="R170">
-<attribute name="NAME" x="6.557803125" y="32.885909375" size="0.8128" layer="25" rot="R80"/>
-<attribute name="OC_NEWARK" value="62W1340" x="8" y="34.5" size="1.778" layer="27" rot="R170" display="off"/>
-<attribute name="MF" value="" x="8" y="34.5" size="1.778" layer="27" rot="R170" display="off"/>
-<attribute name="MPN" value="VSMB2943SLX01" x="8" y="34.5" size="1.778" layer="27" rot="R170" display="off"/>
+<element name="LED2-IR" library="led" package="MICRO-SIDELED" value="IR" x="8" y="34.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.86" y="32.66" size="0.8128" layer="25" rot="R90"/>
+<attribute name="OC_NEWARK" value="62W1340" x="8" y="34.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="8" y="34.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="VSMB2943SLX01" x="8" y="34.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="LED1-IR" library="led" package="MICRO-SIDELED" value="IR" x="8" y="21.5" smashed="yes" rot="R190">
-<attribute name="NAME" x="7.017234375" y="19.356784375" size="0.8128" layer="25" rot="R100"/>
-<attribute name="OC_NEWARK" value="62W1340" x="8" y="21.5" size="1.778" layer="27" rot="R190" display="off"/>
-<attribute name="MF" value="" x="8" y="21.5" size="1.778" layer="27" rot="R190" display="off"/>
-<attribute name="MPN" value="VSMB2943SLX01" x="8" y="21.5" size="1.778" layer="27" rot="R190" display="off"/>
+<element name="LED1-IR" library="led" package="MICRO-SIDELED" value="IR" x="8" y="21.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.66" y="19.56" size="0.8128" layer="25" rot="R90"/>
+<attribute name="OC_NEWARK" value="62W1340" x="8" y="21.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="8" y="21.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="VSMB2943SLX01" x="8" y="21.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R2" library="adafruit" package="R0805" value="10Ohm" x="12.5" y="35" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.784" y="34.084" size="1.27" layer="25" rot="R90"/>
@@ -895,11 +895,11 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="8" y="28" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="150080YS75000" x="8" y="28" size="1.778" layer="27" display="off"/>
 </element>
-<element name="IRRCV" library="adafruit" package="PNA460XM" value="PNA460XM" x="3.5" y="11" smashed="yes" rot="R270">
-<attribute name="NAME" x="6.1512" y="9.3188" size="0.8128" layer="25" ratio="10" rot="R90"/>
-<attribute name="OC_NEWARK" value="02P9885" x="3.5" y="11" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="3.5" y="11" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="TSOP38238" x="3.5" y="11" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="IRRCV" library="adafruit" package="PNA460XM" value="PNA460XM" x="3.5" y="12.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.1512" y="10.8188" size="0.8128" layer="25" ratio="10" rot="R90"/>
+<attribute name="OC_NEWARK" value="02P9885" x="3.5" y="12.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="3.5" y="12.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="TSOP38238" x="3.5" y="12.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="T4" library="transistor" package="SOT23-BEC" value="2N4401" x="22" y="14" smashed="yes" rot="R180">
 <attribute name="NAME" x="23.535" y="12.945" size="1.27" layer="25" rot="R270"/>
@@ -1238,7 +1238,7 @@ design rules under a new name.</description>
 <wire x1="4.4196" y1="9.906" x2="4.572" y2="9.7536" width="0.1524" layer="1"/>
 <wire x1="3.5052" y1="9.906" x2="4.4196" y2="9.906" width="0.1524" layer="1"/>
 <wire x1="12.4968" y1="3.9624" x2="12.5" y2="4" width="0.1524" layer="1"/>
-<wire x1="3.5052" y1="9.906" x2="3.5" y2="8.46" width="0.1524" layer="1"/>
+<wire x1="3.5052" y1="9.906" x2="3.5" y2="9.96" width="0.1524" layer="1"/>
 <wire x1="10.8204" y1="53.7972" x2="8.382" y2="53.7972" width="0.1524" layer="1"/>
 <wire x1="8.382" y1="53.7972" x2="8.37" y2="53.77" width="0.1524" layer="1"/>
 <wire x1="10.8204" y1="53.7972" x2="10.91" y2="53.77" width="0.1524" layer="1"/>
@@ -1271,7 +1271,7 @@ design rules under a new name.</description>
 <wire x1="9.2964" y1="38.2524" x2="6.7056" y2="38.2524" width="0.1524" layer="1"/>
 <wire x1="11.43" y1="36.1188" x2="9.2964" y2="38.2524" width="0.1524" layer="1"/>
 <wire x1="12.4968" y1="36.1188" x2="11.43" y2="36.1188" width="0.1524" layer="1"/>
-<wire x1="3.3528" y1="10.0584" x2="3.5" y2="8.46" width="0.1524" layer="1"/>
+<wire x1="3.3528" y1="10.0584" x2="3.5" y2="9.96" width="0.1524" layer="1"/>
 <wire x1="12.4968" y1="36.1188" x2="12.5" y2="36" width="0.1524" layer="1"/>
 </signal>
 <signal name="GPIO02">
@@ -1460,7 +1460,7 @@ design rules under a new name.</description>
 <wire x1="7.9248" y1="20.4216" x2="6.4008" y2="21.9456" width="0.1524" layer="1"/>
 <wire x1="7.9248" y1="19.6596" x2="7.9248" y2="20.4216" width="0.1524" layer="1"/>
 <wire x1="12.4968" y1="34.1376" x2="12.5" y2="34" width="0.1524" layer="1"/>
-<wire x1="7.9248" y1="19.6596" x2="8.3386125" y2="19.579621875" width="0.1524" layer="1"/>
+<wire x1="7.9248" y1="19.6596" x2="8" y2="19.55" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="LED1-IR" pad="C"/>
@@ -1470,8 +1470,8 @@ design rules under a new name.</description>
 <wire x1="6.7056" y1="30.48" x2="6.7056" y2="26.0604" width="0.1524" layer="1"/>
 <wire x1="7.9248" y1="31.6992" x2="6.7056" y2="30.48" width="0.1524" layer="1"/>
 <wire x1="7.9248" y1="32.4612" x2="7.9248" y2="31.6992" width="0.1524" layer="1"/>
-<wire x1="7.9248" y1="23.4696" x2="7.661384375" y2="23.420375" width="0.1524" layer="1"/>
-<wire x1="7.9248" y1="32.4612" x2="7.661384375" y2="32.579621875" width="0.1524" layer="1"/>
+<wire x1="7.9248" y1="23.4696" x2="8" y2="23.45" width="0.1524" layer="1"/>
+<wire x1="7.9248" y1="32.4612" x2="8" y2="32.55" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="LED2-IR" pad="C"/>
@@ -1490,7 +1490,7 @@ design rules under a new name.</description>
 <wire x1="8.0772" y1="35.052" x2="8.0772" y2="36.4236" width="0.1524" layer="1"/>
 <wire x1="9.4488" y1="33.6804" x2="8.0772" y2="35.052" width="0.1524" layer="1"/>
 <wire x1="9.4488" y1="29.1084" x2="9.4488" y2="33.6804" width="0.1524" layer="1"/>
-<wire x1="8.0772" y1="36.4236" x2="8.3386125" y2="36.420375" width="0.1524" layer="1"/>
+<wire x1="8.0772" y1="36.4236" x2="8" y2="36.45" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R3" pad="1"/>
@@ -1568,7 +1568,7 @@ design rules under a new name.</description>
 <wire x1="4.2672" y1="15.0876" x2="5.7912" y2="16.6116" width="0.1524" layer="1"/>
 <wire x1="3.5052" y1="15.0876" x2="4.2672" y2="15.0876" width="0.1524" layer="1"/>
 <wire x1="15.8496" y1="15.24" x2="15.95" y2="15.1" width="0.1524" layer="1"/>
-<wire x1="3.5052" y1="15.0876" x2="3.5" y2="13.54" width="0.1524" layer="1"/>
+<wire x1="3.5052" y1="15.0876" x2="3.5" y2="15.04" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$21">
 <contactref element="LED-PWR" pad="C"/>
