@@ -1757,8 +1757,6 @@ chip</description>
 <smd name="2" x="1" y="0" dx="1.1" dy="1.4" layer="1"/>
 <text x="-0.762" y="1.016" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.762" y="-2.286" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="21"/>
-<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
 <package name="R0805W">
@@ -8262,14 +8260,12 @@ Source: http://www.osram.convergy.de/ ... LA_LO_LS_LY Y876.pdf</description>
 <smd name="C" x="0" y="-1.95" dx="1.6" dy="1.6" layer="1" stop="no" cream="no"/>
 <text x="-1.27" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.54" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.4" y1="1.1" x2="0.4" y2="1.8" layer="29"/>
-<rectangle x1="-0.4" y1="-1.8" x2="0.4" y2="-1.1" layer="29"/>
 <rectangle x1="-0.35" y1="-1.75" x2="0.35" y2="-1.15" layer="31"/>
 <rectangle x1="-0.35" y1="1.15" x2="0.35" y2="1.75" layer="31"/>
 <rectangle x1="-0.125" y1="1.125" x2="0.125" y2="1.75" layer="51"/>
 <rectangle x1="-0.125" y1="-1.75" x2="0.125" y2="-1.125" layer="51"/>
-<rectangle x1="-0.635" y1="1.27" x2="0.635" y2="2.54" layer="29"/>
-<rectangle x1="-0.635" y1="-2.54" x2="0.635" y2="-1.27" layer="29"/>
+<rectangle x1="-0.635" y1="1.143" x2="0.635" y2="2.54" layer="29"/>
+<rectangle x1="-0.635" y1="-2.54" x2="0.635" y2="-1.143" layer="29"/>
 <text x="-0.635" y="2.54" size="1.27" layer="21">+</text>
 </package>
 <package name="1206">

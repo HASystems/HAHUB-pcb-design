@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<grid distance="19.6850394" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="9.84251969" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -170,7 +170,7 @@ July 2015</text>
 <wire x1="28.1" y1="48.3" x2="28" y2="39.4" width="0.254" layer="25"/>
 <wire x1="45.5" y1="48.5" x2="45.5" y2="30" width="0.254" layer="25"/>
 <wire x1="63.7" y1="30" x2="28" y2="30" width="0.254" layer="25"/>
-<text x="-48.2222" y="19.964" size="1.016" layer="48">
+<text x="-4.964" y="2.7778" size="1.016" layer="48" rot="R90">
 TODO
 
 
@@ -192,6 +192,7 @@ DONE
 <text x="39" y="34.5" size="5.08" layer="25" rot="R90">|X&gt;</text>
 <text x="63" y="8" size="0.8128" layer="25" rot="R90">openqbitsystems.blogspot.com</text>
 <text x="60" y="42" size="2.1844" layer="26" rot="MR0">Home Automation Hub v1.3</text>
+<text x="46" y="28" size="5.08" layer="26" rot="MR0">|X&gt;</text>
 </plain>
 <libraries>
 <library name="transistor-neu-to92">
@@ -230,8 +231,6 @@ chip</description>
 <smd name="2" x="1" y="0" dx="1.1" dy="1.4" layer="1"/>
 <text x="-0.762" y="1.016" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.762" y="-2.286" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="21"/>
-<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
 <package name="C0805">
@@ -555,14 +554,12 @@ Source: http://www.osram.convergy.de/ ... LA_LO_LS_LY Y876.pdf</description>
 <smd name="C" x="0" y="-1.95" dx="1.6" dy="1.6" layer="1" stop="no" cream="no"/>
 <text x="-1.27" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.54" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.4" y1="1.1" x2="0.4" y2="1.8" layer="29"/>
-<rectangle x1="-0.4" y1="-1.8" x2="0.4" y2="-1.1" layer="29"/>
 <rectangle x1="-0.35" y1="-1.75" x2="0.35" y2="-1.15" layer="31"/>
 <rectangle x1="-0.35" y1="1.15" x2="0.35" y2="1.75" layer="31"/>
 <rectangle x1="-0.125" y1="1.125" x2="0.125" y2="1.75" layer="51"/>
 <rectangle x1="-0.125" y1="-1.75" x2="0.125" y2="-1.125" layer="51"/>
-<rectangle x1="-0.635" y1="1.27" x2="0.635" y2="2.54" layer="29"/>
-<rectangle x1="-0.635" y1="-2.54" x2="0.635" y2="-1.27" layer="29"/>
+<rectangle x1="-0.635" y1="1.143" x2="0.635" y2="2.54" layer="29"/>
+<rectangle x1="-0.635" y1="-2.54" x2="0.635" y2="-1.143" layer="29"/>
 <text x="-0.635" y="2.54" size="1.27" layer="21">+</text>
 </package>
 <package name="CHIPLED_0805">
@@ -657,7 +654,7 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="ITEADstudio_DRC">
+<designrules name="OSHParkDesignRules *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -665,35 +662,29 @@ die meisten Anwendungen passen. Sollte ihre Platine
 besondere Anforderungen haben, treffen Sie die erforderlichen
 Einstellungen hier und speichern die Design Rules unter 
 einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
-<description language="zh">&lt;b&gt;Seeed Studio EAGLE Design Rules&lt;/b&gt;
-</description>
+Please make sure your boards conform to these design rules.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
+<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
 <param name="mdPadPad" value="6mil"/>
 <param name="mdPadVia" value="6mil"/>
 <param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="0mil"/>
-<param name="mdSmdVia" value="0mil"/>
-<param name="mdSmdSmd" value="0mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="10mil"/>
+<param name="mdCopperDimension" value="15mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="12mil"/>
-<param name="msMicroVia" value="12mil"/>
+<param name="msDrill" value="13mil"/>
+<param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -702,15 +693,15 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="6mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="6mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -718,13 +709,13 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
-<param name="psFirst" value="0"/>
+<param name="psFirst" value="-1"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="2mil"/>
-<param name="mlMaxStopFrame" value="2mil"/>
+<param name="mlMinStopFrame" value="3mil"/>
+<param name="mlMaxStopFrame" value="3mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="100mil"/>
@@ -738,7 +729,7 @@ design rules under a new name.</description>
 <param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
-<param name="checkRestrict" value="0"/>
+<param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1566,13 +1557,13 @@ design rules under a new name.</description>
 <contactref element="SCHMT2" pad="4"/>
 <wire x1="50.5968" y1="27.2796" x2="50.5968" y2="26.9748" width="0.1524" layer="1"/>
 <wire x1="42.2148" y1="35.6616" x2="50.5968" y2="27.2796" width="0.1524" layer="1"/>
-<wire x1="27.7368" y1="35.6616" x2="42.2148" y2="35.6616" width="0.1524" layer="1"/>
-<wire x1="22.7076" y1="40.6908" x2="27.7368" y2="35.6616" width="0.1524" layer="16"/>
-<wire x1="5.334" y1="40.6908" x2="22.7076" y2="40.6908" width="0.1524" layer="16"/>
+<wire x1="28.2368" y1="35.6616" x2="42.2148" y2="35.6616" width="0.1524" layer="1"/>
+<wire x1="23.2076" y1="40.6908" x2="28.2368" y2="35.6616" width="0.1524" layer="16"/>
+<wire x1="5.334" y1="40.6908" x2="23.2076" y2="40.6908" width="0.1524" layer="16"/>
 <wire x1="4.8768" y1="41.148" x2="5.334" y2="40.6908" width="0.1524" layer="16"/>
 <wire x1="50.5968" y1="26.9748" x2="50.65" y2="26.85" width="0.1524" layer="1"/>
 <wire x1="4.8768" y1="41.148" x2="4.77" y2="41.2" width="0.1524" layer="16"/>
-<via x="27.7368" y="35.6616" extent="1-16" drill="0.3048"/>
+<via x="28.2368" y="35.6616" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="N$1">
 <contactref element="SW3" pad="4"/>
