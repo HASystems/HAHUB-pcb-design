@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10142,12 +10142,12 @@ for the idea that Aniruddh had</description>
 <text x="86.868" y="207.518" size="1.4224" layer="91">SPI_CE1</text>
 <text x="86.868" y="230.632" size="1.4224" layer="91">UART_TXD</text>
 <text x="86.868" y="228.092" size="1.4224" layer="91">UART_RXD</text>
-<text x="31.75" y="226.568" size="1.4224" layer="150" rot="R180">BTN01</text>
-<text x="31.75" y="224.028" size="1.4224" layer="150" rot="R180">BTN02</text>
+<text x="31.75" y="226.568" size="1.4224" layer="150" rot="R180">IR BTN01</text>
+<text x="31.75" y="224.028" size="1.4224" layer="150" rot="R180">IR BTN02</text>
 <text x="337.82" y="236.22" size="5.08" layer="91" rot="R180">Control Buttons</text>
 <text x="335.28" y="167.64" size="5.08" layer="91" rot="R180">Manual Reset</text>
 <text x="266.7" y="185.42" size="1.016" layer="91" rot="R180">WiFi WPS</text>
-<text x="22.86" y="226.568" size="1.4224" layer="150" rot="R180">WiFi WPS</text>
+<text x="20.32" y="226.568" size="1.4224" layer="150" rot="R180">WiFi WPS</text>
 <text x="287.02" y="215.9" size="1.6764" layer="91">Need to add Schmitt triggers 
 for debouncing these 
 push buttons</text>
